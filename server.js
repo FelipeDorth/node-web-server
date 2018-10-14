@@ -79,6 +79,12 @@ app.get('/help', (req, res) => {
   });
 });
 
+app.get('/project', (req, res) => {
+  res.render('project.hbs', {
+    pageTitle: 'Project Page',
+    welcomeMessage: 'Portfolios Here!'
+  });
+});
 
 app.get('/bad', ( req, res) => {
   res.send({
